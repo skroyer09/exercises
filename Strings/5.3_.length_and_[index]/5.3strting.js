@@ -10,6 +10,8 @@ console.log(`${firstName} is ${len} characters long`);
 const letter = firstName[0];
 console.log(`The first letter of ${firstName} is ${letter}`);
 
+//----------------------------------------------------------------------
+
 const newName = "Albus percival Wufric Brain Dumbledore";
 const leng = newName.length;
 const lett = newName[2];
