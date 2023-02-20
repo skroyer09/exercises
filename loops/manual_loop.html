@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Counter Example</h1>
+    <p id="counter-value"></p>
+
+    <script>
+      let counter = 0;
+      const counterValue = document.getElementById("counter-value");
+
+      function loop() {
+        counter++;
+        counterValue.textContent = counter;
+        if (counter < 40) {
+          setTimeout(loop, 400);
+        }
+      }
+
+      loop();
+    </script>
+  </body>
+</html>
